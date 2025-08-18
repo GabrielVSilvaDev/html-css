@@ -1,0 +1,30 @@
+<!DOCTYPE html> <!-- Declara o tipo do documento como HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Suporte a acentuação e caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade: adapta o layout para dispositivos móveis -->
+    <title>Mídias em HTML5</title> <!-- Título da aba do navegador -->
+</head>
+<body>
+    <h1>Imagem dinâmica</h1> <!-- Título da seção de imagens -->
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p> <!-- Explicação sobre imagem responsiva -->
+    <picture> <!-- Permite imagens dinâmicas conforme o tamanho da tela -->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!-- Imagem pequena para telas até 750px -->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!-- Imagem média para telas até 1050px -->
+        <img src="imagens/foto-g.png" alt="Imagem flexível"> <!-- Imagem padrão para telas maiores -->
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1> <!-- Título da seção de áudio -->
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p> <!-- Explicação sobre áudio -->
+    <audio preload="metadata" autoplay controls loop> <!-- Tag para áudio com opções: -->
+        <!-- preload="metadata": carrega só informações básicas do áudio (duração, etc) -->
+        <!-- autoplay: inicia automaticamente -->
+        <!-- controls: mostra controles de reprodução -->
+        <!-- loop: repete o áudio ao terminar -->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg"> <!-- Fonte MP3 -->
+        <source src="midia/guanacast-33.ogg" type="audio/ogg"> <!-- Fonte OGG -->
+        <source src="midia/guanacast-33.wav" type="audio/wav"> <!-- Fonte WAV -->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p> <!-- Mensagem alternativa caso o navegador não suporte áudio -->
+    </audio>
+</body>
+</html>
