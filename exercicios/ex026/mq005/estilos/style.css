@@ -53,6 +53,8 @@ nav > ul > li > a {
 
 nav > ul > li > a:hover {
     background-color: grey;
+    color: black;
+    font-size: 1.2em;
 }
 
 main {
